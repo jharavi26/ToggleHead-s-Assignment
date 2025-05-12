@@ -10,6 +10,10 @@
   align-items: center;
 }
 
+.exam-card{
+
+}
+
 .upcoming-examinations .header {
   text-align: left;
   border-right: 1px solid #e0e0e0; /* Vertical separator */
@@ -37,6 +41,7 @@
 
 .exam-card {
   text-align: center;
+  display: flex;
   flex: 1;
 }
 
@@ -56,6 +61,11 @@
   color: #666;
   font-size: 0.9rem;
   margin: 0.3rem 0;
+}
+
+.component{
+  display: flex;
+  flex-direction: column;
 }
 
 /* Responsive Styles */

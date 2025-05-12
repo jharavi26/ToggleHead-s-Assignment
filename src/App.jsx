@@ -6,8 +6,8 @@ import Examination from './Component/Examination';
 import Slider from './Component/Slider';
 import Countdown from './Component/Countdown';
 import Faq from './Component/Faq';
-import Subscribe from './Component/Subscribe';
 import Footer from './Component/Footer';
+import Subscribe from './Component/Subscribe';
 
 
 

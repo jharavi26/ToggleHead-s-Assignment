@@ -7,6 +7,11 @@ function Slider() {
   return (
     <div className='slider-container'>
       <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
     </div>
   )
 }

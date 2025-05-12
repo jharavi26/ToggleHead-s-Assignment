@@ -33,10 +33,12 @@ const Examination = () => {
                 alt="Calendar Icon"
               />
             </div>
+            <div className='component'>
             <h3>{exam.date}</h3>
             <p>{exam.level}</p>
             {exam.details &&
               exam.details.map((detail, i) => <p key={i}>{detail}</p>)}
+          </div>
           </div>
         ))}
       </div>

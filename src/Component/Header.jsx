@@ -30,7 +30,7 @@ function Header() {
             <li>Research & Analysis <IoMdArrowDropdown /></li>
             <li>Lorem Ipsum <IoMdArrowDropdown /></li>
             <li>Lorem Ipsum <IoMdArrowDropdown /></li>
-            <IoSearch size={24} style={{ cursor: "pointer"}} />
+            <IoSearch size={24} style={{ cursor: "pointer" , color:"white"}} />
              <button className='enrolment'>Enrolment</button>
           </ul>
         </div>

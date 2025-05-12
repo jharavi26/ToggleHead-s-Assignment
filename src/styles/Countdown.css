@@ -1,17 +1,47 @@
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-  gap: 1rem; /* Spacing between columns */
+  grid-template-columns: repeat(4, 1fr); /* Default: 4 equal columns */
+  gap: 1rem; /* Spacing between grid items */
   margin: 1rem;
   background-color: #f4f4f4;
 }
 
-.item{
-padding: 1rem;
-text-align: center;
-border-radius: 8px;
+.item {
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #ffffff; /* Optional: Add a background color for better visibility */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
 
-.grid-container span{
+.grid-container span {
   font-size: 30px;
+}
+
+/* Responsive Styles */
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  }
+
+  .grid-container span {
+    font-size: 24px; /* Reduce font size for smaller screens */
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 column layout */
+  }
+
+  .grid-container span {
+    font-size: 20px; /* Further reduce font size for mobile */
+  }
+
+  .item {
+    padding: 0.75rem; /* Adjust padding for smaller screens */
+  }
 }
