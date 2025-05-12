@@ -1,0 +1,108 @@
+/* General Styles */
+.upcoming-examinations {
+  font-family: Arial, sans-serif;
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Two columns: 1/4 for header, 3/4 for exams grid */
+  gap: 2rem; /* Spacing between columns */
+  align-items: center;
+}
+
+.upcoming-examinations .header {
+  text-align: left;
+  border-right: 1px solid #e0e0e0; /* Vertical separator */
+  padding-right: 1rem;
+}
+
+.upcoming-examinations .header h2 {
+  color: #003366;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.upcoming-examinations .header p {
+  color: #666;
+  font-size: 1rem;
+  margin: 0.5rem 0 0;
+}
+
+/* Grid Styles */
+.exams-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.exam-card {
+  text-align: center;
+  flex: 1;
+}
+
+.exam-card .icon img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5rem;
+}
+
+.exam-card h3 {
+  color: #003366;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.exam-card p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+
+/* Responsive Styles */
+
+/* For tablets (768px and above but less than 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .upcoming-examinations {
+    grid-template-columns: 1fr; /* Single column layout */
+    text-align: center;
+  }
+
+  .header {
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 1px solid #e0e0e0; /* Horizontal separator */
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .exams-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* For mobile devices (less than 768px) */
+@media (max-width: 767px) {
+  .upcoming-examinations {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .header {
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .exams-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .exam-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}

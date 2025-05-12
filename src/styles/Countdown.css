@@ -1,0 +1,17 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 1rem; /* Spacing between columns */
+  margin: 1rem;
+  background-color: #f4f4f4;
+}
+
+.item{
+padding: 1rem;
+text-align: center;
+border-radius: 8px;
+}
+
+.grid-container span{
+  font-size: 30px;
+}

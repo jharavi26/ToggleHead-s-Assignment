@@ -1,0 +1,145 @@
+/* General Container for the Header */
+.header-container {
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(147, 160, 190);
+  z-index: 1000;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative;
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+/* Navigation Links */
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  gap: 10px;
+}
+
+.list li {
+  font-size: 1rem;
+  color: black;
+  cursor: pointer;
+  position: relative;
+}
+
+.list li:hover {
+  color: #666;
+}
+
+.enrolment {
+  width: 120px;
+  height: 50px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.enrolment:hover {
+  background-color: #f1f1f1;
+}
+
+/* Hamburger Menu (Visible on Mobile) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 100%;
+  height: 4px;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+.bar.active {
+  background-color: #fff;
+}
+
+/* Media Queries for Tablet and Mobile */
+@media (max-width: 768px) {
+  .navlinks {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: rgb(147, 160, 190);
+    border-radius: 8px;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navlinks.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .list {
+    display: block;
+    gap: 20px;
+  }
+
+  .list li {
+    font-size: 1.2rem;
+  }
+
+  .enrolment {
+    width: 100px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 20px 10px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .list li {
+    font-size: 1.1rem;
+  }
+
+  .enrolment {
+    width: 90px;
+    height: 40px;
+  }
+}
