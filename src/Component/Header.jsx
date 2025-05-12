@@ -31,10 +31,10 @@ function Header() {
             <li>Lorem Ipsum <IoMdArrowDropdown /></li>
             <li>Lorem Ipsum <IoMdArrowDropdown /></li>
             <IoSearch size={24} style={{ cursor: "pointer"}} />
+             <button className='enrolment'>Enrolment</button>
           </ul>
         </div>
-   
-        <button className='enrolment'>Enrolment</button>
+
       </div>
     </div>
   );

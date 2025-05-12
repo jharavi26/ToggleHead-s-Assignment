@@ -3,7 +3,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgb(147, 160, 190);
+  background-color: #12406f;
   z-index: 1000;
 }
 
@@ -20,7 +20,7 @@
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: black;
+  color: white;
   cursor: pointer;
 }
 
@@ -36,18 +36,16 @@
   list-style: none;
   margin: 0;
   gap: 10px;
+  align-items: center;
 }
 
 .list li {
-  font-size: 1rem;
-  color: black;
   cursor: pointer;
   position: relative;
+  display: flex;
+  color: white;
 }
 
-.list li:hover {
-  color: #666;
-}
 
 .enrolment {
   width: 120px;
