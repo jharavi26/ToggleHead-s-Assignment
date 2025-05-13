@@ -10,9 +10,6 @@
   align-items: center;
 }
 
-.exam-card{
-
-}
 
 .upcoming-examinations .header {
   text-align: left;
@@ -46,9 +43,10 @@
 }
 
 .exam-card .icon img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   margin-bottom: 0.5rem;
+  margin-right: 1rem;
 }
 
 .exam-card h3 {
