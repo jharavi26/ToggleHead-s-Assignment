@@ -1,19 +1,18 @@
-
 .upcoming-examinations {
   font-family: Arial, sans-serif;
   margin: 2rem auto;
   padding: 1rem;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: 1fr 3fr; /* Two columns: 1/4 for header, 3/4 for exams grid */
-  gap: 2rem; /* Spacing between columns */
+  grid-template-columns: 1fr 3fr; 
+  gap: 2rem; 
   align-items: center;
 }
 
 
 .upcoming-examinations .header {
   text-align: left;
-  border-right: 1px solid #e0e0e0; /* Vertical separator */
+  border-right: 1px solid #e0e0e0; 
   padding-right: 1rem;
 }
 
@@ -70,28 +69,33 @@
 
 @media (max-width: 1024px) and (min-width: 768px) {
   .upcoming-examinations {
-    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-columns: 1fr; 
     text-align: center;
+    justify-items: center;  
   }
 
   .header {
     border-right: none;
     padding-right: 0;
-    border-bottom: 1px solid #e0e0e0; /* Horizontal separator */
+    border-bottom: 1px solid #e0e0e0; 
     padding-bottom: 1rem;
     margin-bottom: 1rem;
   }
 
   .exams-grid {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;  
+    gap: 1rem;
   }
 }
 
-
 @media (max-width: 767px) {
   .upcoming-examinations {
-    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-columns: 1fr; 
+    text-align: center;
+    justify-items: center;  
   }
 
   .header {
@@ -103,13 +107,16 @@
   }
 
   .exams-grid {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;  
     gap: 1rem;
   }
 
   .exam-card {
     width: 100%;
     max-width: 300px;
+    margin: 0 auto;  
   }
 }

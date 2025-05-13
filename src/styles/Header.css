@@ -97,7 +97,7 @@
 
 @media (max-width: 768px) {
   .hamburger {
-    display: flex; /* Show hamburger menu for mobile */
+    display: flex; 
   }
 
   .navlinks {
@@ -113,7 +113,7 @@
   }
 
   .navlinks.open {
-    display: flex; /* Show nav links when hamburger menu is active */
+    display: flex; 
   }
 
   .navlinks ul {
