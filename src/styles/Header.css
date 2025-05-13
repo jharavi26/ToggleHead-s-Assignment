@@ -1,4 +1,4 @@
-/* General Header Styles */
+
 .header-container {
   background-color: #12406f;
   color: white;
@@ -39,7 +39,6 @@
   background-color: white;
 }
 
-/* Navigation Links */
 .navlinks {
   display: flex;
   align-items: center;
@@ -82,9 +81,8 @@
   color: #ffcc00;
 }
 
-/* Responsive Design */
 
-/* For tablets (max-width: 1024px) */
+
 @media (max-width: 1024px) {
   .navlinks ul {
     gap: 1rem;
@@ -96,7 +94,7 @@
   }
 }
 
-/* For mobile devices (max-width: 768px) */
+
 @media (max-width: 768px) {
   .hamburger {
     display: flex; /* Show hamburger menu for mobile */

@@ -15,14 +15,12 @@ function Header() {
       <div className='navbar'>
         <p className='logo'>LOGO</p>
 
-        {/* Hamburger Icon for Mobile */}
         <div className="hamburger" onClick={toggleMenu}>
           <div className={`bar ${isMenuOpen ? 'active' : ''}`}></div>
           <div className={`bar ${isMenuOpen ? 'active' : ''}`}></div>
           <div className={`bar ${isMenuOpen ? 'active' : ''}`}></div>
         </div>
 
-        {/* Nav Links */}
         <div className={`navlinks ${isMenuOpen ? 'open' : ''}`}>
           <ul className='list'>
             <li>Qualifications <IoMdArrowDropdown /></li>

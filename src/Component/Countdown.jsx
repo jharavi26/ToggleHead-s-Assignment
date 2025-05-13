@@ -3,7 +3,7 @@ import "../styles/Countdown.css";
 
 function Countdown() {
   return (
-    <div class="grid-container">
+    <div className="grid-container">
       <div className='item'>
         <p >Lorem ipsum</p>
         <span style={{fontWeight:"bolder", fontSize:"40px"}}>123+</span>

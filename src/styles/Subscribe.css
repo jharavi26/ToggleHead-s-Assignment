@@ -73,9 +73,9 @@
   height: auto;
 }
 
-/* Responsive Design */
 
-/* Tablet View */
+
+
 @media (max-width: 768px) {
   .subscribe-container {
     flex-direction: column;
@@ -97,7 +97,7 @@
   }
 }
 
-/* Mobile View */
+
 @media (max-width: 480px) {
   .subscribe-text h2 {
     font-size: 1.5rem;

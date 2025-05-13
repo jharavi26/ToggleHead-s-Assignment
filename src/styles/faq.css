@@ -1,4 +1,4 @@
-/* General FAQ Styles */
+
 .faq {
   font-family: Arial, sans-serif;
   margin: 2rem auto;
@@ -68,9 +68,9 @@ hr {
   margin: 1rem 0;
 }
 
-/* Responsive Styles */
 
-/* For tablets (768px and above but less than 1024px) */
+
+
 @media (max-width: 1024px) {
   .faq {
     max-width: 90%;
@@ -87,7 +87,7 @@ hr {
   }
 }
 
-/* For mobile devices (less than 768px) */
+
 @media (max-width: 767px) {
   .faq {
     max-width: 100%;

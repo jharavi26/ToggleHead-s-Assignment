@@ -1,20 +1,20 @@
 .slider-container {
   display: flex;
-  flex-direction: row;  /* Align cards horizontally */
-  gap: 16px;           /* Add space between cards */
-  overflow-x: auto;    /* Enable horizontal scrolling */
-  scrollbar-width: none; /* Hide scrollbar in Firefox */
-  padding: 16px;       /* Add padding inside the container */
+  flex-direction: row; 
+  gap: 16px;         
+  overflow-x: auto;   
+  scrollbar-width: none; 
+  padding: 16px;       
 }
 
 .slider-container::-webkit-scrollbar {
-  display: none; /* Hide scrollbar in Webkit browsers (Chrome, Safari) */
+  display: none; 
 }
 
 .card {
-  flex: 0 0 auto; /* Prevent cards from shrinking or stretching */
-  width: 350px;   /* Set a fixed width for cards */
-  height: 200px;  /* Set a fixed height for cards */
+  flex: 0 0 auto; 
+  width: 350px;   
+  height: 200px;  
   background: #12406f;
   border-radius: 15px;
   display: flex;

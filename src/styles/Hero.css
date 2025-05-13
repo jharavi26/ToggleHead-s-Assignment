@@ -5,7 +5,7 @@
   border-radius: 10px;
   overflow: hidden;
   max-width: 100%;
-  max-height: 450px;
+  max-height: 500px;
   min-height: 350px;
 }
 
@@ -47,7 +47,7 @@
   background-color: #00509e;
 }
 
-/* Right Image Section */
+
 .slider-right {
   flex: 1 1 50%;
   display: flex;
@@ -65,7 +65,6 @@
   display: block;
 }
 
-/* Dots Below the Image */
 .dots-container {
   margin-top: 10px;
   display: flex;
@@ -87,7 +86,7 @@
   background: #003366;
 }
 
-/* Tablet & Mobile */
+
 @media screen and (max-width: 1024px) {
   .custom-slider {
     flex-direction: column;
