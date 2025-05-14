@@ -38,16 +38,13 @@ const slides = [
 export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+useEffect(() => {
+  const timer = setInterval(() => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+  }, 3000);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIndex((prev) => {
-      const nextIndex = prev === slides.length - 1 ? 0 : prev + 1;
-      return nextIndex; 
-    });
-    }, 3000);
-    return () => clearInterval(timer);
-  }, []);
+  return () => clearInterval(timer);
+}, [slides.length]);
 
   return (
     <div className="custom-slider">
