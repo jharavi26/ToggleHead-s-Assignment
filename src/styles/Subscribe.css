@@ -93,8 +93,11 @@
   }
 
   .subscribe-button {
-    width: 100%;
+    width: 50%;
+    font-size: 0.75rem;
+    padding: 0.5rem;
   }
+
 }
 
 
